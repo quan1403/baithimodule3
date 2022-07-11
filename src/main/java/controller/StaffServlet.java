@@ -29,12 +29,15 @@ public class StaffServlet extends HttpServlet {
         switch (action) {
             case "create":
                 showCreateForm(req, resp);
+                req.getRequestDispatcher("view/staff.jsp");
                 break;
             case "edit":
                 showEditForm(req,resp);
+                req.getRequestDispatcher("view/staff.jsp");
                 break;
             case "delete":
                 showDeleteForm(req,resp);
+                req.getRequestDispatcher("view/staff.jsp");
                 break;
             default:
                 showStaff(req, resp);
@@ -52,6 +55,7 @@ public class StaffServlet extends HttpServlet {
         switch (action) {
             case "create":
                 createStaff(req, resp);
+                req.getRequestDispatcher("view/staff.jsp");
                 break;
             case "edit":
                 updateStaff(req,resp);

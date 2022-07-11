@@ -8,7 +8,7 @@ public class Connect_MySQL {
     public static Connection getConnect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/nhanvien?useSSL=false";
+            String url = "jdbc:mysql://localhost:3306/quanlynhanvien?useSSL=false";
             String username = "root";
             String pass = "quan1998";
             return DriverManager.getConnection(url, username, pass);
